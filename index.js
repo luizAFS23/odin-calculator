@@ -1,6 +1,5 @@
 const display = document.querySelector('.display');
 const show = document.querySelector('.show');
-const btn_1 = document.querySelector('.btn-1');
 const btn_eq = document.querySelector('.btn-eq');
 
 let number1, number2;
@@ -31,7 +30,7 @@ btn_eq.addEventListener('click', () =>{
     for(let i = 0; i <= display.value.length; i++){
         number1 = parseInt(display.value.slice(0, i));
         number2 = parseInt(display.value.slice(i + 1));
-        
+
         if (display.value.charAt(i) == '+'){
             add(number1, number2);
         }else if(display.value.charAt(i) == '-'){
